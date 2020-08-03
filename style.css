@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background: url("../back1.jpg") #F4F4F4; */
+    overflow: hidden;
+    height: 100vh;
+    background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.65)
+    ),
+    /* bottom, image */
+    url("../back2.jpg" );
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.navbar{
+    background: #111;
+    overflow: hidden;
+    height: 67px;
+}
+.humurger{
+    color: #FFFFFF;
+    font-size: large;
+    font-weight: bold;
+}
+.navbar a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px;
+    font-size: 17px;
+}
+.navbar a:hover{
+    color: deeppink;
+}
+.navbar ul{
+    list-style: none;
+    margin: 18px 0 0 0;
+}
+.side-nav{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 1s;
+}
+.side-nav a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 22px;
+    display: block;
+    /* transition: 1s; */
+}
+.side-nav a:hover{
+    font-weight: bolder;
+}
+.main{
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+}
+@media(max-width:568px){
+    .navbar-nav{display: none;}
+}

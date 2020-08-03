@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Side Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="ope-slide"><a href="#" class="fa fa-bars humurger" onclick="openSideMenu()"></a></span>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Services</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+            <li class="nav-item"><a href="#">Go to Here</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="side-nav" id="side-menu">
+        <a href="#" class="fa fa-times btn-close" onclick="closeSideMenu()"></a>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#">Go to Here</a>
+    </div>
+
+    <div class="main" id="main">
+        <h1 style="color: #FFF;">Welcome</h1>
+        <p style="color: #FFF;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio illo sed facere soluta
+            veniam dolores amet
+            repellendus, quidem ducimus numquam aspernatur nisi totam aliquid illum distinctio minima aliquam
+            dignissimos quas!</p>
+    </div>
+
+
+
+    <script>
+        function openSideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            var main = document.getElementById('main');
+            main.style.marginLeft = '250px';
+            main.style.transition = '1s';
+
+        }
+        function closeSideMenu() {
+            document.getElementById('side-menu').style.width = '0px'
+            document.getElementById('main').style.marginLeft = '0px';
+
+        }
+    </script>
+</body>
+
+</html>
